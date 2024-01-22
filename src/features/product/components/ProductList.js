@@ -54,7 +54,8 @@ export default function ProductList() {
       options: brands,
     },
   ];
-
+console.log(products);
+console.log("bhai aaja", products[0].title);
   const [filter, setFilter] = useState({});
   const [sort, setSort] = useState({});
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);

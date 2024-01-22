@@ -9,13 +9,18 @@ export function fetchAllProducts() {
 }
 
 export function fetchProductById(id) {
-  return new Promise(async (resolve) =>{
-    //TODO: we will not hard-code server URL here
-    const response = await fetch('http://localhost:8080/products/'+id) 
-    const data = await response.json()
-    resolve({data})
+  try {
+    return new Promise(async (resolve) =>{
+      //TODO: we will not hard-code server URL here
+      const response = await fetch('http://localhost:8080/products/?id='+id) 
+      const data = await response.json()
+      resolve({data})
+    }
+    );
+  } catch (error) {
+    console.log("raita fail gya")
   }
-  );
+ 
 }
 
 export function fetchProductsByFilters(filter,sort,pagination) {
@@ -43,8 +48,11 @@ export function fetchProductsByFilters(filter,sort,pagination) {
   return new Promise(async (resolve) =>{
     //TODO: we will not hard-code server URL here
     const response = await fetch('http://localhost:8080/products?'+queryString) 
+    const response2 = await fetch('http://localhost:8080/products?') 
     const data = await response.json()
-    const totalItems = await response.headers.get('X-Total-Count')
+    const data2 = await response2.json()
+    const totalItems = data2.length//await response.headers.get('X-Total-Count')
+    console.log(totalItems);
     resolve({data:{products:data,totalItems:+totalItems}})
   }
   );
