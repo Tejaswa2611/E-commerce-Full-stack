@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { fetchAllProducts,fetchProductsByFilters, fetchBrands, fetchCategories, fetchProductById } from './productAPI';
+import { act } from 'react-dom/test-utils';
 
 const initialState = {
   products: [],
@@ -101,7 +102,8 @@ export const productSlice = createSlice({
       })
       .addCase(fetchAllProductByIdAsync.fulfilled, (state, action) => {
         state.status = 'idle';
-        state.selectedProduct = action.payload;
+        state.selectedProduct = action.payload[0];
+        // console.log("rarara", action.payload[0])
       })
   },
 });
