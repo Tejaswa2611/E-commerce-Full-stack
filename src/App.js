@@ -14,6 +14,10 @@ import CartPage from "./pages/CartPage";
 import Checkout from "./pages/Checkout";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import Protected from "./features/auth/components/Protected";
+import { useDispatch, useSelector } from "react-redux";
+import { selectLoggedInUser } from "./features/auth/authSlice";
+import { fetchItemsByUserIdAsync } from "./features/cart/cartSlice";
+import { useEffect } from "react";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,19 +37,40 @@ const router = createBrowserRouter([
   },
   {
     path: "/cart",
-    element: <Protected><CartPage></CartPage></Protected>,
+    element: (
+      <Protected>
+        <CartPage></CartPage>
+      </Protected>
+    ),
   },
   {
     path: "/checkout",
-    element: <Protected><Checkout></Checkout></Protected>,
+    element: (
+      <Protected>
+        <Checkout></Checkout>
+      </Protected>
+    ),
   },
   {
     path: "/product-detail/:id",
-    element: <Protected><ProductDetailPage></ProductDetailPage></Protected>,
+    element: (
+      <Protected>
+        <ProductDetailPage></ProductDetailPage>
+      </Protected>
+    ),
   },
 ]);
 
 function App() {
+  const dispatch = useDispatch();
+  const user = useSelector(selectLoggedInUser);
+  useEffect(() => {
+    if (user) {
+      dispatch(fetchItemsByUserIdAsync(user.id));
+      // console.log("are jaaa naa bhaiiif jasoidfjsadi fji")
+    }
+  }, [dispatch,user]);
+
   return (
     <div className="App">
       <RouterProvider router={router} />

@@ -1,4 +1,4 @@
-import NavBar from "../features/navbar/Navbar";
+import NavBar from "../features/navbar/navbar";
 import ProductList from "../features/product/components/ProductList";
 // aayein
 function Home() {
