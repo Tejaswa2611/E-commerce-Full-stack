@@ -41,6 +41,7 @@ export default function Signup() {
                 createUserAsync({
                   email: data.email,
                   password: data.password,
+                  address: [],
                 })
               );
               // console.log("ye rha data", data.email, data.password);

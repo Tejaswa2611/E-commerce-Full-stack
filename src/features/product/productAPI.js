@@ -39,7 +39,7 @@ export function fetchProductsByFilters(filter,sort,pagination) {
   for(let key in sort){
     queryString += `${key}=${sort[key]}&`
   }
-  console.log(pagination)
+  // console.log(pagination)
   for(let key in pagination){
     queryString += `${key}=${pagination[key]}&`
   }
@@ -52,7 +52,7 @@ export function fetchProductsByFilters(filter,sort,pagination) {
     const data = await response.json()
     const data2 = await response2.json()
     const totalItems = data2.length//await response.headers.get('X-Total-Count')
-    console.log(totalItems);
+    // console.log(totalItems);
     resolve({data:{products:data,totalItems:+totalItems}})
   }
   );

@@ -48,9 +48,11 @@ export default function ProductDetail() {
   // const product = products[0];
 
   const handlecart = (e) => {
-    console.log("hehe");
+    // console.log("hehe");
     e.preventDefault();
-    dispatch(addToCartAsync({ ...product, quantity: 1, user: user.id }));
+    const newItem = {...product,quantity:1,user:user.id}
+    delete newItem['id'];
+    dispatch(addToCartAsync(newItem));
   };
 
   useEffect(() => {
