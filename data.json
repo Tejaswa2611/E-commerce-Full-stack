@@ -2475,115 +2475,34 @@
       ]
     }
   ],
-  "cart": [
-    {
-      "id": "458b",
-      "title": "Huawei P30",
-      "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Huawei",
-      "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/5/1.jpg",
-        "https://cdn.dummyjson.com/product-images/5/2.jpg",
-        "https://cdn.dummyjson.com/product-images/5/3.jpg"
-      ],
-      "quantity": 1,
-      "user": "570c"
-    },
-    {
-      "id": "306c",
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/2/1.jpg",
-        "https://cdn.dummyjson.com/product-images/2/2.jpg",
-        "https://cdn.dummyjson.com/product-images/2/3.jpg",
-        "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
-      ],
-      "quantity": 5,
-      "user": "cd2b"
-    },
-    {
-      "id": "96e3",
-      "title": "Microsoft Surface Laptop 4",
-      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-      "price": 1499,
-      "discountPercentage": 10.23,
-      "rating": 4.43,
-      "stock": 68,
-      "brand": "Microsoft Surface",
-      "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/8/1.jpg",
-        "https://cdn.dummyjson.com/product-images/8/2.jpg",
-        "https://cdn.dummyjson.com/product-images/8/3.jpg",
-        "https://cdn.dummyjson.com/product-images/8/4.jpg",
-        "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
-      ],
-      "quantity": 3,
-      "user": "570c"
-    }
-  ],
+  "cart": [],
   "orders": [
     {
-      "id": "ac75",
+      "id": "a9e8",
       "items": [
         {
-          "id": "458b",
-          "title": "Huawei P30",
-          "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-          "price": 499,
-          "discountPercentage": 10.58,
-          "rating": 4.09,
-          "stock": 32,
-          "brand": "Huawei",
-          "category": "smartphones",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
+          "id": "5ee1",
+          "title": "MacBook Pro",
+          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+          "price": 1749,
+          "discountPercentage": 11.02,
+          "rating": 4.57,
+          "stock": 83,
+          "brand": "Apple",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/6/thumbnail.png",
           "images": [
-            "https://cdn.dummyjson.com/product-images/5/1.jpg",
-            "https://cdn.dummyjson.com/product-images/5/2.jpg",
-            "https://cdn.dummyjson.com/product-images/5/3.jpg"
+            "https://cdn.dummyjson.com/product-images/6/1.png",
+            "https://cdn.dummyjson.com/product-images/6/2.jpg",
+            "https://cdn.dummyjson.com/product-images/6/3.png",
+            "https://cdn.dummyjson.com/product-images/6/4.jpg"
           ],
           "quantity": 1,
           "user": "570c"
-        },
-        {
-          "id": "96e3",
-          "title": "Microsoft Surface Laptop 4",
-          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-          "price": 1499,
-          "discountPercentage": 10.23,
-          "rating": 4.43,
-          "stock": 68,
-          "brand": "Microsoft Surface",
-          "category": "laptops",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
-          "images": [
-            "https://cdn.dummyjson.com/product-images/8/1.jpg",
-            "https://cdn.dummyjson.com/product-images/8/2.jpg",
-            "https://cdn.dummyjson.com/product-images/8/3.jpg",
-            "https://cdn.dummyjson.com/product-images/8/4.jpg",
-            "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
-          ],
-          "quantity": 3,
-          "user": "570c"
         }
       ],
-      "totalAmount": 4996,
-      "paymentMethod": "cash",
+      "totalAmount": 1749,
+      "totalItems": 1,
       "user": {
         "id": "570c",
         "email": "mathurkiit@gmail.com",
@@ -2600,6 +2519,7 @@
           }
         ]
       },
+      "paymentMethod": "cash",
       "selectAddress": {
         "name": "Tejaswa",
         "email": "demo@demo.com",
@@ -2608,13 +2528,14 @@
         "city": "Bareilly",
         "state": "Uttar Pradesh",
         "pinCode": "243122"
-      }
+      },
+      "status": "pending"
     },
     {
-      "id": "f421",
+      "id": "6216",
       "items": [
         {
-          "id": "458b",
+          "id": "ca05",
           "title": "Huawei P30",
           "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
           "price": 499,
@@ -2631,31 +2552,10 @@
           ],
           "quantity": 1,
           "user": "570c"
-        },
-        {
-          "id": "96e3",
-          "title": "Microsoft Surface Laptop 4",
-          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-          "price": 1499,
-          "discountPercentage": 10.23,
-          "rating": 4.43,
-          "stock": 68,
-          "brand": "Microsoft Surface",
-          "category": "laptops",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
-          "images": [
-            "https://cdn.dummyjson.com/product-images/8/1.jpg",
-            "https://cdn.dummyjson.com/product-images/8/2.jpg",
-            "https://cdn.dummyjson.com/product-images/8/3.jpg",
-            "https://cdn.dummyjson.com/product-images/8/4.jpg",
-            "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
-          ],
-          "quantity": 3,
-          "user": "570c"
         }
       ],
-      "totalAmount": 4996,
-      "paymentMethod": "cash",
+      "totalAmount": 499,
+      "totalItems": 1,
       "user": {
         "id": "570c",
         "email": "mathurkiit@gmail.com",
@@ -2672,7 +2572,90 @@
           }
         ]
       },
-      "selectAddress": null
+      "paymentMethod": "cash",
+      "selectAddress": {
+        "name": "Tejaswa",
+        "email": "demo@demo.com",
+        "phone": "8824694303",
+        "street": "143 mega dream homes NEAR karmchari nagar",
+        "city": "Bareilly",
+        "state": "Uttar Pradesh",
+        "pinCode": "243122"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "d8a9",
+      "items": [
+        {
+          "id": "5e4e",
+          "title": "- Daal Masoor 500 grams",
+          "description": "Fine quality Branded Product Keep in a cool and dry place",
+          "price": 20,
+          "discountPercentage": 4.81,
+          "rating": 4.44,
+          "stock": 133,
+          "brand": "Saaf & Khaas",
+          "category": "groceries",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/21/thumbnail.png",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/21/1.png",
+            "https://cdn.dummyjson.com/product-images/21/2.jpg",
+            "https://cdn.dummyjson.com/product-images/21/3.jpg"
+          ],
+          "quantity": 3,
+          "user": "570c"
+        },
+        {
+          "id": "709f",
+          "title": "Stylish Casual Jeans Shoes",
+          "description": "High Quality ,Stylish design ,Comfortable wear ,FAshion ,Durable",
+          "price": 58,
+          "discountPercentage": 7.55,
+          "rating": 4.55,
+          "stock": 129,
+          "brand": "Sneakers",
+          "category": "mens-shoes",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/60/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/60/1.jpg",
+            "https://cdn.dummyjson.com/product-images/60/2.jpg",
+            "https://cdn.dummyjson.com/product-images/60/3.jpg",
+            "https://cdn.dummyjson.com/product-images/60/thumbnail.jpg"
+          ],
+          "quantity": 3,
+          "user": "570c"
+        }
+      ],
+      "totalAmount": 234,
+      "totalItems": 6,
+      "user": {
+        "id": "570c",
+        "email": "mathurkiit@gmail.com",
+        "password": "qwerty12",
+        "address": [
+          {
+            "name": "Tejaswa",
+            "email": "demo@demo.com",
+            "phone": "8824694303",
+            "street": "143 mega dream homes NEAR karmchari nagar",
+            "city": "Bareilly",
+            "state": "Uttar Pradesh",
+            "pinCode": "243122"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectAddress": {
+        "name": "Tejaswa",
+        "email": "demo@demo.com",
+        "phone": "8824694303",
+        "street": "143 mega dream homes NEAR karmchari nagar",
+        "city": "Bareilly",
+        "state": "Uttar Pradesh",
+        "pinCode": "243122"
+      },
+      "status": "pending"
     }
   ]
 }

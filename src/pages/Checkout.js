@@ -12,7 +12,10 @@ import {
   updateUserAsync,
 } from "../features/auth/authSlice";
 import { useState } from "react";
-import { createOrderAsync } from "../features/order/orderSlice";
+import {
+  createOrderAsync,
+  selectCurrentOrder,
+} from "../features/order/orderSlice";
 
 function Checkout() {
   const dispatch = useDispatch();
@@ -30,7 +33,7 @@ function Checkout() {
     (amount, item) => item.price * item.quantity + amount,
     0
   );
-  // const totalItems = items.reduce((total, item) => item.quantity + total, 0);
+  const totalItems = items.reduce((total, item) => item.quantity + total, 0);
   const handleRemove = (e, id) => {
     dispatch(deleteItemFromCartAsync(id));
   };
@@ -46,14 +49,37 @@ function Checkout() {
     // console.log(e.target.value);
     setPaymentMethod(e.target.value);
   };
-  const handleOrder = () => {
-    dispatch(createOrderAsync({ items, totalAmount, paymentMethod, user ,selectAddress}));
-    console.log("Order Placed");
+  const handleOrder = (e) => {
+    if (selectAddress && paymentMethod) {
+      const order = {
+        items,
+        totalAmount,
+        totalItems,
+        user,
+        paymentMethod,
+        selectAddress,
+        status: "pending", // other status can be delivered, received.
+      };
+      dispatch(createOrderAsync(order));
+      // need to redirect from here to a new page of order success.
+    } else {
+      // TODO : we can use proper messaging popup here
+      alert("Enter Address and Payment method");
+    }
+    //TODO : Redirect to order-success page
+    //TODO : clear cart after order
+    //TODO : on server change the stock number of items
   };
+  const currentOrder = useSelector(selectCurrentOrder);
   return (
     <>
-      {/* {console.log(items.length)}   */}
       {!items.length && <Navigate to="/" replace={true}></Navigate>}
+      {currentOrder && (
+        <Navigate
+          to={`/order-success/${currentOrder.id}`}
+          replace={true}
+        ></Navigate>
+      )}
       {/* {console.log(items[0].quantity)}
       {items.forEach((item) => {
         console.log(item.quantity);
@@ -413,11 +439,10 @@ function Checkout() {
                 <div className="mt-6">
                   <div
                     onClick={handleOrder}
-                    
                     className="flex items-center cursor-pointer justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                   >
                     Order And Pay
-                  </div>  
+                  </div>
                 </div>
                 <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                   <p>
