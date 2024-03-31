@@ -25,6 +25,8 @@ import {
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
 import { ITEMS_PER_PAGE } from "../../../app/constants";
+import { selectUserInfo } from "../../user/userSlice";
+// import { selectLoggedInUser } from "../../auth/authSlice";
 
 const sortOptions = [
   { name: "Best Rating", sort: "rating", order: "desc", current: false },
@@ -42,6 +44,9 @@ export default function ProductList() {
   const brands = useSelector(selectBrands);
   const categories = useSelector(selectCategories);
   const totalItems = useSelector(selectTotalItems);
+  // const user = useSelector(selectLoggedInUser);
+  // const user = useSelector(selectUserInfo);
+  // console.log(user);
   const filters = [
     {
       id: "category",

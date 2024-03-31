@@ -21,6 +21,10 @@ import { useEffect } from "react";
 import PageNotFound from "./pages/404";
 import OrderSuccessPage from "./pages/OrderSuccessPage";
 import UserOrdersPage from "./pages/UserOrdersPage";
+import UserProfile from "./features/user/components/UserProfile";
+import { fetchLoggedInUser } from "./features/user/userAPI";
+import UserProfilePage from "./pages/UserProfilePage";
+import { fetchLoggedInUserAsync } from "./features/user/userSlice";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -75,6 +79,12 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: '/profile',
+    element: (
+      <UserProfilePage></UserProfilePage>
+    ),
+  },
+  {
     path: "*",
     element: (
      <PageNotFound></PageNotFound>
@@ -88,7 +98,7 @@ function App() {
   useEffect(() => {
     if (user) {
       dispatch(fetchItemsByUserIdAsync(user.id));
-      // console.log("are jaaa naa bhaiiif jasoidfjsadi fji")
+      dispatch(fetchLoggedInUserAsync(user.id));
     }
   }, [dispatch,user]);
 

@@ -2439,13 +2439,13 @@
       "password": "qwerty12",
       "address": [
         {
-          "name": "Tejaswa",
+          "name": "Yash mathur",
           "email": "demo@demo.com",
-          "phone": "8824694303",
-          "street": "143 mega dream homes NEAR karmchari nagar",
           "city": "Bareilly",
           "state": "Uttar Pradesh",
-          "pinCode": "243122"
+          "pinCode": "243122",
+          "phone": "8824694303",
+          "street": "143 mega dream homes NEAR karmchari nagar"
         }
       ]
     },
@@ -2648,6 +2648,124 @@
       "paymentMethod": "cash",
       "selectAddress": {
         "name": "Tejaswa",
+        "email": "demo@demo.com",
+        "phone": "8824694303",
+        "street": "143 mega dream homes NEAR karmchari nagar",
+        "city": "Bareilly",
+        "state": "Uttar Pradesh",
+        "pinCode": "243122"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "a87d",
+      "items": [
+        {
+          "id": "f658",
+          "title": "Sofa for Coffe Cafe",
+          "description": "Ratttan Outdoor furniture Set Waterproof  Rattan Sofa for Coffe Cafe",
+          "price": 50,
+          "discountPercentage": 15.59,
+          "rating": 4.74,
+          "stock": 30,
+          "brand": "Ratttan Outdoor",
+          "category": "furniture",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/32/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/32/1.jpg",
+            "https://cdn.dummyjson.com/product-images/32/2.jpg",
+            "https://cdn.dummyjson.com/product-images/32/3.jpg",
+            "https://cdn.dummyjson.com/product-images/32/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "cd2b"
+        }
+      ],
+      "totalAmount": 50,
+      "totalItems": 1,
+      "user": {
+        "id": "cd2b",
+        "email": "mathur2611@gmail.com",
+        "password": "qwerty123",
+        "address": [
+          {
+            "name": "Tejaswa",
+            "email": "mathurkiit@gmail.com",
+            "phone": "9761580119",
+            "street": "143 mega dream homes NEAR karmchari nagar",
+            "city": "Bareilly",
+            "state": "Uttar Pradesh",
+            "pinCode": "243122"
+          },
+          {
+            "name": "Tejaswa",
+            "email": "mathurkiit@gmail.com",
+            "phone": "9412679661",
+            "street": "143 mega dream homes NEAR karmchari nagar",
+            "city": "Bareilly",
+            "state": "Uttar Pradesh",
+            "pinCode": "243122"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectAddress": {
+        "name": "Tejaswa",
+        "email": "mathurkiit@gmail.com",
+        "phone": "9761580119",
+        "street": "143 mega dream homes NEAR karmchari nagar",
+        "city": "Bareilly",
+        "state": "Uttar Pradesh",
+        "pinCode": "243122"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "2b22",
+      "items": [
+        {
+          "id": "4ff7",
+          "title": "Sleeve Shirt Womens",
+          "description": "Cotton Solid Color Professional Wear Sleeve Shirt Womens Work Blouses Wholesale Clothing Casual Plain Custom Top OEM Customized",
+          "price": 90,
+          "discountPercentage": 10.89,
+          "rating": 4.26,
+          "stock": 39,
+          "brand": "Professional Wear",
+          "category": "tops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/36/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/36/1.jpg",
+            "https://cdn.dummyjson.com/product-images/36/2.webp",
+            "https://cdn.dummyjson.com/product-images/36/3.webp",
+            "https://cdn.dummyjson.com/product-images/36/4.jpg",
+            "https://cdn.dummyjson.com/product-images/36/thumbnail.jpg"
+          ],
+          "quantity": 3,
+          "user": "570c"
+        }
+      ],
+      "totalAmount": 270,
+      "totalItems": 3,
+      "user": {
+        "id": "570c",
+        "email": "mathurkiit@gmail.com",
+        "password": "qwerty12",
+        "address": [
+          {
+            "name": "Yash",
+            "email": "demo@demo.com",
+            "phone": "8824694303",
+            "street": "143 mega dream homes NEAR karmchari nagar",
+            "city": "Bareilly",
+            "state": "Uttar Pradesh",
+            "pinCode": "243122"
+          }
+        ]
+      },
+      "paymentMethod": "cash",
+      "selectAddress": {
+        "name": "Yash",
         "email": "demo@demo.com",
         "phone": "8824694303",
         "street": "143 mega dream homes NEAR karmchari nagar",
